@@ -16,6 +16,8 @@ env:
   - INVENTREE_CONFIG_FILE=/opt/inventree/config.yaml
 after_install: contrib/packager.io/postinstall.sh
 before:
+  - sudo apt-get -y install libssl-dev
+  - sudo apt-get -y install libssl1.1
   - contrib/packager.io/before.sh
 dependencies:
   - curl
