@@ -32,7 +32,8 @@ dependencies:
   - gettext
   - nginx
   - jq
+  - libssl-dev
   - libffi7
 targets:
-  ubuntu-20.04: true
+  ubuntu-24.04: true
 
