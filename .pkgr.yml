@@ -16,8 +16,8 @@ env:
   - INVENTREE_CONFIG_FILE=/opt/inventree/config.yaml
 after_install: contrib/packager.io/postinstall.sh
 before:
-  - sudo wget http://security.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1f-1ubuntu2.16_amd64.deb
-  - sudo wget http://security.ubuntu.com/ubuntu/pool/main/o/openssl/libssl-dev_1.1.1f-1ubuntu2.16_amd64.deb
+  - sudo wget http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1f-1ubuntu2.22_amd64.deb
+  - sudo wget http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/libssl-dev_1.1.1f-1ubuntu2.16_amd64.deb
   - sudo dpkg -i libssl-dev_1.1.1f-1ubuntu2.16_amd64.deb
   - sudo sudo dpkg -i openssl_1.1.1f-1ubuntu2.16_amd64.deb
   - contrib/packager.io/before.sh
