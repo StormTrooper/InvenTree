@@ -37,5 +37,4 @@ dependencies:
   - jq
   - "libffi7 | libffi8"
 targets:
-  ubuntu-20.04: true
-  debian-11: true
+  ubuntu-24.04: true
